@@ -1,0 +1,184 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #ff0000, #000000, #ff0000, #000000);
+    background-size: 800% 800%;
+    animation: gradientAnimation 30s ease infinite;
+    z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playpen Sans', sans-serif; 
+}
+
+header {
+    background: #000000ab; 
+    color: #ffffff; 
+    padding: 20px 0; 
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+}
+
+nav ul {
+    margin-top: 0;
+    list-style: none; 
+    padding: 10px; 
+    background: #000000ab; 
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+.nav-icon {
+    font-size: 30px; 
+    color: #ffffff; 
+    transition: transform 0.3s; 
+}
+
+nav a {
+    text-decoration: none; 
+}
+
+nav a:hover .nav-icon {
+    transform: scale(1.1); 
+}
+
+main { 
+    padding: 20px; 
+    color: #ffffff; 
+    background: #00000000; 
+    flex: 1; 
+}
+
+footer {
+    text-align: center; 
+    padding: 10px 0; 
+    background: #000000ab; 
+    color: #ffffff; 
+    width: 100%; 
+    position: relative;
+    bottom: 0;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.section-container {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background: #2424246e; 
+    border-radius: 10px;
+}
+
+.header-gif {
+    width: 70px; 
+    height: auto; 
+    vertical-align: left; 
+    margin-right: 10px; 
+    border-radius: 40px;
+}
+
+.nav-icon {
+    font-size: 30px; 
+    color: #ffffff; 
+    transition: transform 0.3s; 
+}
+
+.nav-link:hover .nav-icon {
+    transform: scale(1.1); 
+}
+
+.install-container {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.install-button {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #268522; 
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.install-button:hover {
+    background-color: #0056b3; 
+}
+
+.header-icon {
+    width: 60px; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+    border-radius: 30px;
+}
+
+.install-icon {
+    margin-right: 5px; 
+    font-size: 20px; 
+    vertical-align: bottom; 
+    color: #ffffff; 
+}
+
+.social-icon {
+    margin: 0 10px; 
+    font-size: 24px; 
+    color: #ffffff; 
+    transition: color 0.3s; 
+}
+
+.social-icon:hover {
+    color: #ff0000; 
+}
